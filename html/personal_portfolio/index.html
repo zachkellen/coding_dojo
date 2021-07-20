@@ -4,17 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zach's Portfolio</title>
+    <meta name="description" content="Learn all about the next greatest full-stack engineer, Zach Kellen. Give him a job today!">
+    <title>Zach Kellen | Portfolio</title>
 </head>
 <body>
+    <!-- Start with full name -->
     <h1>Zachary Kellen</h1>
-    <img src="./images/headshot.jpg" alt="This is a headshot of Zach">
 
-    <a href="https://github.com/zachkellen">My Github</a>
-    <a href="https://www.linkedin.com/in/zach-kellen/">My LinkedIn</a>
-    <a href="mailto:zachkellen27@gmail.com">My Email</a>
-    
-    <table><thead>Technologies</thead><tr>Front-End</tr><thead>test1</thead><tbody>Python</tbody></table>
-    <p>Give me a dang job already!</p>
+    <!-- Add in headshot image -->
+    <div>
+        <img src="./images/headshot.jpg" alt="This is a headshot of Zach">
+    </div>
+
+    <!-- All of my relevant social media links -->
+    <div>
+        <a href="https://github.com/zachkellen">My Github</a>
+        <a href="https://www.linkedin.com/in/zach-kellen/">My LinkedIn</a>
+        <a href="mailto:zachkellen27@gmail.com">My Email</a>
+    </div>
+
+    <!-- Start of the technologies table -->
+    <h2>Technologies</h2>    
+    <table>
+        <tr>
+            <th>Front-End  </th>
+            <th>Python  </th>
+            <th>JavaScript  </th>
+            <th>Database  </th>
+            <th>Concepts  </th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>Django</td>
+            <td>Express</td>
+            <td>MySql</td>
+            <td>AJAX</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>Flask</td>
+            <td>Mongoose</td>
+            <td>MongoDB</td>
+            <td>OOP</td>
+        </tr>
+        <tr>
+            <td>Bootstrap</td>
+            <td>Unittest</td>
+            <td>React</td>
+            <td></td>
+            <td>Rest</td>
+        </tr>
+    </table>
+
+    <!-- Social snakes demonstration (just copying the example here) -->
+    <h3>Social Snakes</h3>
+    <!-- <img src="./images/meta_tag.jpg" alt="Placeholder image for social snake"> is how I would insert an image like that if I could make it smaller -->
+    <p>Social Media App made in Python - <a href="https://www.google.com/">code</a> | <a href="https://www.google.com/">deployed</a></p>
+
+    <!-- Using an unordered list  -->
+    <h3>My favorite video games:</h3>
+    <ul>
+        <li>Overwatch</li>
+        <li>God of War (2018)</li>
+        <li>Borderlands 2</li>
+        <li>Super Mario Bros. 3</li>
+    </ul>
+
+    <!-- Using an ordered list -->
+    <h3>Where I want to work after Coding Dojo:</h3>
+    <ol>
+        <li>Microsoft</li>
+        <li>Twitch</li>
+        <li>Anywhere that will pay me :D</li>
+    </ol>
+
+    <!-- Contact me form section (name, email, message field, send message button) -->
+    <h3>Contact Me</h3>
+    <form action="/process" method="post">
+        <div>
+            <label>Name: </label>
+            <input type="text" name="name">
+            <label>Email: </label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Message: </label>
+            <textarea name="contact_me_message" id="contact_me" cols="30" rows="5"></textarea>
+        </div>
+        <!-- Submit button for end of form -->
+        <input type="submit" value="Send Message">
+    </form>
 </body>
 </html>
